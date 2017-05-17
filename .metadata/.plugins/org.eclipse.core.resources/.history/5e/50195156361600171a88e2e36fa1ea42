@@ -1,0 +1,26 @@
+import java.io.*;
+
+public class Maschine {
+	int manr; // Maschinennummer
+	double preis; // Maschinen anschaffungspreis
+	String mabez; // Bezeichnung 
+	String stao; // Standort
+	int crt; // Kontrollwert
+	
+	
+	Maschine(){
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

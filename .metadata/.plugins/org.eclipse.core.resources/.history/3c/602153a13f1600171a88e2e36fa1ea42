@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+public class MaschAnw {
+	
+
+	public static void main(String[] args)throws IOException{
+		String[] CSV_String = new String[8];
+		
+		Maschine GuntersMaschine = new Maschine();
+		
+		GuntersMaschine.ausMasch();
+		
+		CSV_String = maschGeber();
+		
+		/*
+		for(int i=0;i<8;i++){
+			System.out.println(CSV_String[i]);
+		}
+		*/
+		
+		
+		
+		List<Maschine> Maschine_List = new LinkedList<Maschine>();
+		
+		for (int i=0 ; i<CSV_String.length ; i++){
+			//System.out.println(CSV_String[i]);
+			
+			if(new Maschine(CSV_String[i]).getCrt()==1){
+				// Eintragen der Aktuellen Maschine in die Liste
+				Maschine_List.add(new Maschine (CSV_String[i]));
+				System.out.println("Maschine erfolgreich eingetragen: "+i);
+				
+				//Ausgabe der Aktuellen Maschine
+				//new Maschine (CSV_String[i]).ausMasch();
+				System.out.println("");
+				
+			}
+			else{
+				System.out.println("Nein");
+			}
+		}
+		
+		
+	}
+	
+	public static String[] maschGeber(){
+		String[] s = new String[8];
+		s[0] = "123;456.34;Machiene0;Ort0";  
+		s[1] = "3423;456.34;Machiene1;ort1"; //F
+		s[2] = "546;943;Machiene2;Ort2";
+		s[3] = "-456;75.12;Machiene3;Ort3"; //F
+		s[4] = "789;3a.98;Machiene4;Ort4";
+		s[5] = "235;9;machiene5;Ort5"; //F
+		s[6] = "564;23;Machiene6;Ort6";
+		s[7] = "122;654.5;Machiene7;Ort7";
+		
+		return s;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

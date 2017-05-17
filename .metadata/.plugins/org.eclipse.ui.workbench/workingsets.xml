@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1490939682758_1" label="TIN 1" name="TIN 1">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Primzahl" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP-Labortermin2" type="4"/>
+<item elementID="=PI-Praktikum3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI-Praktikum4-Vorbereitung" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Allerlei" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP Praktikums einführung" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP Aufgaben 1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP Aufgaben 3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Prog" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP-Labortermin1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI-Praktikum4" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP-Labortermin3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI Übungsstunden" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI-Praktikum2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI-Praktikum3-Vorbereitung" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP-Aufgabe 4" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI-Praktikum2-Vorbereitung" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PP Aufgaben 2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Übungsstunde 1" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1476542677582_0" label="Window Working Set" name="Aggregate for window 1476542677582"/>
+</workingSetManager>

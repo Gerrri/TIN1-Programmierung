@@ -1,0 +1,108 @@
+import java.io.*;
+import java.util.*;
+
+public class MaschAnw {
+	
+
+	public static void main(String[] args)throws IOException{
+		String[] CSV_String = new String[8];
+		int wahl=0;
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		Maschine GuntersMaschine = new Maschine();
+		
+		GuntersMaschine.ausMasch();
+		
+		CSV_String = maschGeber();
+		System.out.println("");
+		
+		/*
+		for(int i=0;i<8;i++){
+			System.out.println(CSV_String[i]);
+		}
+		*/
+		
+		
+		
+		List<Maschine> Maschine_List = new LinkedList<Maschine>();
+		
+		for (int i=0 ; i<CSV_String.length ; i++){
+			//System.out.println(CSV_String[i]);
+			
+			if(new Maschine(CSV_String[i]).getCrt()==1){
+				// Eintragen der Aktuellen Maschine in die Liste
+				Maschine_List.add(new Maschine (CSV_String[i]));
+				System.out.println("Erfolg Nr:"+i);
+				
+				//Ausgabe der Aktuellen Maschine
+				//new Maschine (CSV_String[i]).ausMasch();
+				
+				
+			}
+			else{
+				System.out.println("#######Fehler Nr:"+i);
+			}
+		}
+		
+		do{
+		
+		System.out.println("");
+		
+		System.out.println("[1+Enter]Abschreibungswert berechnen");
+		System.out.println("[2+Enter]");
+		System.out.println("[0+Enter]Programm Beenden");
+		
+		wahl = Integer.parseInt(in.readLine());
+		
+		switch(wahl){
+			case 1: System.out.println("Maschine nummer?");
+					int nr = (Integer.parseInt(in.readLine()))+1;
+				
+					System.out.println("Gesamtlaufzeit(in Tagen)?:");
+					int laufzeit = Integer.parseInt(in.readLine());
+					
+					new Maschine(CSV_String[nr]).abschreibung(laufzeit);
+					System.out.println("Die Abschreibungswert Beträgt: "+ Maschine_List.get(nr).abschreibung(laufzeit)+" €1");
+					break;
+			
+			case 2: FileWriter CSV_File = new FileWriter("MASCH.TXT", true);
+					PrintWriter CSV_Text = new PrintWriter(CSV_File);
+					for (int a = 0; a < Maschine_List.toArray().length; a++)
+					{
+						CSV_Text.println(Maschine_List.get(a).ausMaschCSV());
+					}
+					CSV_Text.close();	
+					break;
+			
+			default: wahl=3;
+			
+		}
+		
+		}while(wahl!=0);
+		
+		
+	}
+	
+	public static String[] maschGeber(){
+		String[] s = new String[8];
+		s[0] = "123;456.34;Machiene0;Ort0";  
+		s[1] = "3423;456.34;Machiene1;ort1"; //F
+		s[2] = "546;943;Machiene2;Ort2";
+		s[3] = "-456;75.12;Machiene3;Ort3"; //F
+		s[4] = "789;33.98;Machiene4;Ort4";
+		s[5] = "235;9;machiene5;Ort5"; //F
+		s[6] = "564;23;Machiene6;Ort6";
+		s[7] = "122;654.5;Machiene7;Ort7";
+		
+		return s;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
